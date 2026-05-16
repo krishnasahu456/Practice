@@ -5,8 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iron Core Gym</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#07152d;
+      color:white;
+    }
+
+    .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      background:#07152d;
+      position:sticky;
+      top:0;
+    }
+
+    .logo{
+      color:red;
+      font-size:2rem;
+      font-weight:bold;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:20px;
+    }
+
+    .nav-links a{
+      color:white;
+      text-decoration:none;
+    }
+
+    .hero{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      padding:80px 8%;
+    }
+
+    .hero-content{
+      flex:1;
+      min-width:300px;
+    }
+
+    .hero-content h1{
+      font-size:4rem;
+    }
+
+    .hero-content span{
+      color:red;
+    }
+
+    .btn{
+      padding:12px 24px;
+      border:none;
+      border-radius:30px;
+      background:red;
+      color:white;
+      cursor:pointer;
+      margin-top:20px;
+    }
+
+    .hero-image{
+      flex:1;
+      min-width:300px;
+      text-align:center;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:500px;
+      border-radius:20px;
+    }
+
+    .plans{
+      padding:80px 8%;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#111;
+      padding:30px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border:1px solid red;
+    }
+
+    .price{
+      color:red;
+      font-size:2rem;
+    }
+
+    @media(max-width:768px){
+      .hero{
+        text-align:center;
+      }
+
+      .hero-content h1{
+        font-size:2.5rem;
+      }
+
+      .nav-links{
+        display:none;
+      }
+    }
+  </style>
+</head>
+
 <body>
-    <h1>Hello</h1>
-    <h1>Original project</h1>
+
+  <nav class="navbar">
+    <div class="logo">IRON CORE</div>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Plans</a>
+      <a href="#">Trainers</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <button class="btn">Join Now</button>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+      <h1>BUILD YOUR <span>DREAM BODY</span></h1>
+
+      <p>
+        Transform your body with professional trainers and premium equipment.
+      </p>
+
+      <button class="btn">Get Started</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop">
+    </div>
+
+  </section>
+
+  <section class="plans">
+
+    <div class="card">
+      <h2>Basic</h2>
+      <div class="price">₹999</div>
+      <p>Gym Access</p>
+      <p>Locker</p>
+      <button class="btn">Choose</button>
+    </div>
+
+    <div class="card">
+      <h2>Pro</h2>
+      <div class="price">₹1999</div>
+      <p>Diet Plan</p>
+      <p>Cardio Zone</p>
+      <button class="btn">Choose</button>
+    </div>
+
+    <div class="card">
+      <h2>Elite</h2>
+      <div class="price">₹3499</div>
+      <p>Personal Coach</p>
+      <p>VIP Support</p>
+      <button class="btn">Choose</button>
+    </div>
+
+  </section>
+
+
+
+
 </body>
 </html>
